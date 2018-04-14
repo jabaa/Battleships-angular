@@ -1,0 +1,9 @@
+version: "3"
+services:
+  Web:
+    build: .
+    image: jabaa/battleships-angular:1.0
+    ports:
+      - "0.0.0.0:4200:4200"
+    volumes:
+      - "./src:/home/node/Battleships/src"
